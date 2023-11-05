@@ -64,6 +64,7 @@
 #include "sql/engine/expr/ob_expr_is_serving_tenant.h"
 #include "sql/engine/expr/ob_expr_hex.h"
 #include "sql/engine/expr/ob_expr_in.h"
+#include "sql/engine/expr/ob_expr_hello.h"
 #include "sql/engine/expr/ob_expr_not_in.h"
 #include "sql/engine/expr/ob_expr_int2ip.h"
 #include "sql/engine/expr/ob_expr_ip2int.h"
@@ -796,6 +797,7 @@ void ObExprOperatorFactory::register_expr_operators()
     REG_OP(ObExprToSeconds);
     REG_OP(ObExprTimeToSec);
     REG_OP(ObExprSecToTime);
+    REG_OP(ObExprHello);
     REG_OP(ObExprInterval);
     REG_OP(ObExprTruncate);
     REG_OP(ObExprDllUdf);
