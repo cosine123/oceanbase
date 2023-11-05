@@ -37,6 +37,7 @@
 #include "ob_expr_from_unix_time.h"
 #include "ob_expr_func_partition_key.h"
 #include "ob_expr_greatest.h"
+#include "ob_expr_hello.h"
 #include "ob_expr_host_ip.h"
 #include "ob_expr_trim.h"
 #include "ob_expr_insert.h"
@@ -506,6 +507,7 @@ static ObExpr::EvalFunc g_expr_eval_functions[] = {
   ObExprExtract::calc_extract_oracle,                                 /* 75 */
   ObExprExtract::calc_extract_mysql,                                  /* 76 */
   ObExprFoundRows::eval_found_rows,                                   /* 77 */
+  ObExprHello::eval,
   ObExprFromUnixTime::eval_one_temporal_fromtime,                     /* 78 */
   ObExprFromUnixTime::eval_one_param_fromtime,                        /* 79 */
   ObExprFromUnixTime::eval_fromtime_normal,                           /* 80 */
